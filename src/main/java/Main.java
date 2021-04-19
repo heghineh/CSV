@@ -17,7 +17,7 @@ public class Main {
                 BufferedWriter writer = Files.newBufferedWriter(Paths.get(String.valueOf(file)));
 
                 CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.DEFAULT
-                        .withHeader("Name", "Last Name", "Date", "Race", "Phone Number", "Email"));
+                        .withHeader("Name", "Last Name", "Date of Birth", "Race", "Phone Number", "Email"));
         ) {
             myRandomRaceGenerator myRandomRaceGenerator = new myRandomRaceGenerator();
             myRandomEmailGenerator myRandomEmailGenerator = new myRandomEmailGenerator();
